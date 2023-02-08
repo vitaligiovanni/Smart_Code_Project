@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.nav_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_container ul {
+  list-style-type: none;
+}
+.nav_container .menu {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  font-size: 18px;
+}
+.nav_container a {
+  text-decoration: none;
+}
+.nav_container img {
+  padding: 12px;
+}
+.nav_container .burger {
+  display: none;
+}
+.nav_container .burger:hover ul {
+  transform: translateX(0);
+}
+.nav_container .burger .bi-list {
+  font-size: 40px;
+}
+.nav_container .burger ul {
+  position: absolute;
+  transform: translateX(-100%);
+  background-color: rgb(169, 166, 166);
+  width: 100%;
+  left: 0;
+  text-align: left;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.nav_container .burger a {
+  color: black;
+  padding: 0 0 0 15px;
+}
+
+@media (max-width: 1024px) {
+  .nav_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .nav_container .menu {
+    display: none;
+  }
+  .nav_container .burger {
+    display: block;
+  }
+}
+section {
+  background-image: url("../imeges/girl-student-standing-with-colorful-folders-min.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: -200px;
+  height: 900px;
+  background-size: cover;
+  line-height: 2;
+  font-size: 17px;
+}
+section .container_card {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 15px;
+  padding-top: 60px;
+  text-align: center;
+  text-align: left;
+}
+section .container_card .card1 {
+  grid-row: 1/3;
+  background-color: white;
+  padding: 40px;
+}
+section .container_card .card1 img {
+  width: 15%;
+}
+section .container_card .card1 .button {
+  display: inline-block;
+  padding: 5px 20px;
+  border: 2px solid rgb(156, 156, 156);
+  transform: translateY(90px);
+  text-decoration: none;
+  transition: 0.5s;
+}
+section .container_card .card1 .button:hover {
+  border: 2px solid rgb(71, 71, 71);
+}
+section .container_card .card {
+  background-color: white;
+  padding: 40px;
+}
+
+@media (max-width: 768px) {
+  section {
+    line-height: 1;
+    font-size: 20px;
+  }
+  section .container_card {
+    grid-template-columns: 3fr 1fr;
+  }
+  section .container_card .card1 {
+    grid-row: 1/5;
+    font-size: 40px;
+    padding: 50px;
+    box-shadow: 5px 20px 10px 4px rgba(0, 0, 0, 0.548);
+  }
+  section .container_card .card1 img {
+    width: 20%;
+  }
+  section .container_card .card {
+    background-color: white;
+    padding: 30px;
+    box-shadow: 5px 20px 10px 4px rgba(0, 0, 0, 0.548);
+  }
+}
+@media (max-width: 425px) {
+  section .container_card {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  section .container_card .card1 {
+    background-color: rgba(255, 255, 255, 0.795);
+    font-size: 15px;
+    padding: 12px;
+    box-shadow: 5px 20px 10px 4px rgba(0, 0, 0, 0.548);
+  }
+  section .container_card .card1 img {
+    width: 20%;
+  }
+  section .container_card .card1 .card {
+    background-color: rgba(255, 255, 255, 0.747);
+    padding: 30px;
+    box-shadow: 5px 20px 10px 4px rgba(0, 0, 0, 0.548);
+    font-size: 15px;
+  }
+}
+footer {
+  display: block;
+  background-color: rgb(51, 51, 51);
+  text-align: center;
+}
+footer .footer1 {
+  color: white;
+}
+footer a {
+  color: white;
+}
+footer p {
+  color: white;
+}
+footer .footer2 {
+  padding: 30px;
+}/*# sourceMappingURL=style.css.map */
